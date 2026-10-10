@@ -51,8 +51,7 @@ def fetch_recent():
     wx = requests.get("https://api.open-meteo.com/v1/forecast",
         params={"latitude": LAT, "longitude": LON,
                 "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,surface_pressure",
-                "start_date": str(start), "end_date": str(end), "timezone": "auto",
-                "past_days": 4},
+                "start_date": str(start), "end_date": str(end), "timezone": "auto"},
         timeout=60).json()
     df = pd.DataFrame({"time": pd.to_datetime(aq["hourly"]["time"])})
     df["pm25"] = aq["hourly"]["pm2_5"]
