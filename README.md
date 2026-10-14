@@ -36,3 +36,7 @@ The notebook `Lahore_Smog_Forecast.ipynb` walks through the full pipeline step b
 [Streamlit app](https://lahore-smog-forecast.streamlit.app) — pulls the latest 72 hours from Open-Meteo and forecasts the next 24.
 
 *For education — not a medical device.*
+
+---
+
+**Author:** [Rayyan Khan](https://rayyankhan.online) — Machine Learning Engineer, Pakistan
